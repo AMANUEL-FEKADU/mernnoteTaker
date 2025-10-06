@@ -1,0 +1,478 @@
+html {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbardiv {
+  width: 100%;
+  display: flex;
+  align-items: center;      
+  justify-content: space-between; 
+  padding: 0 10px; 
+  padding-top: 10px;    
+       
+}
+
+h1 {
+  margin: 0; 
+  margin-left: 25px;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbardiv a {
+  text-decoration: none;
+  color: rgb(22, 211, 148);
+}
+
+.navbardiv a:hover {
+  color: rgba(253, 253, 253, 0.959);
+}
+
+.hom{
+    font-size: 50px;
+    color: rgb(148, 150, 149);
+ 
+    display: flex;
+    justify-content: center;
+}
+.text{
+    color:  rgb(22, 211, 148);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 350px;
+}
+
+
+
+.sign {
+  width: 150px;
+  border-radius: 30px;
+  background-color: rgb(22, 211, 148);
+  text-align: center;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right: 80px; 
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  
+
+}
+
+.sign a {
+  color: black;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.autho{
+   
+    width: 450px;
+    height: 300px;
+    border: 1px solid rgb(164, 165, 164);
+    color: rgb(83, 94, 92);
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    padding-top: 40px;
+   
+    backdrop-filter: blur(20px);
+    background: transparent;
+    margin-top: 0;
+    border-color: rgb(104, 247, 211);
+    
+}
+ .main{
+    display: flex;
+    justify-content: center;
+      align-items: center;    
+  position: absolute;      
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+ }
+.insert{
+    margin-top: 20px;
+     color: rgb(255, 255, 255); 
+  
+}
+
+.butt{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.im{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.im video{
+    height: 300px;
+}
+
+.notesdiv{
+  color: white;
+}
+.icone{
+  margin-top: 50px;
+  margin-left: 1000px;
+  padding-left: 15px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: 35px;
+  border: 1px solid rgb(23, 180, 120);
+  background-color: rgb(4, 44, 44);
+  width:150px
+ 
+}
+.icone a{
+  text-decoration: none;
+}
+.icone:hover{
+  background-color: rgb(22, 212, 149);
+  color: black;
+  .spantxt{
+    color: black;
+  }
+}
+.spantxt{
+  color: rgb(12, 196, 134);
+  padding-left: 15px;
+  padding-bottom: 20px;
+  
+}
+
+.notelist{
+  padding: 4px;
+  color: white;
+}
+
+.loading{
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(37, 218, 142);
+  font-size: 55px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading svg {
+  animation: spin 1s linear infinite;
+}
+.notecard{
+   margin-top: 10px;
+  padding: 10px 15px;
+  margin-left: 25px;
+  color: white;
+  border-bottom: 1px solid rgb(86, 87, 86);
+    border-left: 1px solid  rgb(86, 87, 86);
+      border-right: 1px solid  rgb(86, 87, 86);
+  border-top: 10px solid rgb(16, 212, 137);
+  border-radius: 10px;
+  width:250px;
+  height: 200px;
+ 
+  gap: 10px;
+ overflow-wrap: break-word;
+ white-space: normal;
+
+  
+}
+.notecard p {
+  white-space: nowrap;        /* force single line */
+  overflow: hidden;           /* hide extra text */
+  text-overflow: ellipsis;    /* add "..." at the end */
+  max-width: 100%;            /* stay inside the card */
+  display: block;
+}
+.cardcontain{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+
+}
+.notecard:hover{
+  background-color: rgb(255, 251, 251);
+  color: rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(104, 223, 217);
+  border-left: 3px solid rgb(104, 223, 217);
+  border-right: 3px solid rgb(104, 223, 217);
+  border-top: 10px solid rgb(235, 95, 95);
+ 
+}
+.notecard a {
+  text-decoration: none; 
+  color: inherit;        
+}
+
+.notebutton{
+  display: flex;
+ 
+  justify-content: end;
+  padding-bottom: 5px;
+  color: rgb(49, 161, 131);
+
+}
+.date{
+  display: flex;
+  padding-right: 35px;
+  padding-top: 50px;
+}
+
+.notebutton button{
+  color: tomato;
+  background-color: inherit;
+  border: 0px solid black;
+}
+.notebutton .edit{
+  color: rgb(0, 255, 170);
+}
+.notebutton button :hover{
+ 
+  background-color: rgba(0, 0, 0, 0.932);
+  
+}
+.backbox{
+  display: flex;
+  gap: 20px;
+  padding-top: 5px ;
+  padding-bottom: 5px;
+  border: 1px solid ghostwhite;
+  border-radius: 30px;
+  width:150px;
+  display: flex;
+  margin: 50px;
+  
+  align-items: center;
+  
+}
+.backbox:hover{
+  background-color: rgba(128, 128, 128, 0.527);
+
+}
+
+
+.backbox a{
+  text-decoration: none;
+  color: white;
+}
+
+.backicon{
+  vertical-align:middle;
+  padding-left: 5px;
+  margin-right: 8px;
+}
+
+.maincr{
+  border: 1px solid rgba(92, 90, 90, 0.459);
+  border-radius: 25px;
+  margin: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(129, 126, 126, 0.384);
+  height:max-content;
+  display: flex;
+  justify-content: center;
+
+}
+
+.cardcr{
+  color: rgba(16, 241, 129, 0.966);
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.cardcr input{
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 30px;
+  background-color: inherit;
+  width:380px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(215, 224, 224);
+
+
+
+}
+.texta{
+  margin-top: 25px;
+  
+
+}
+.texta textarea{
+  background-color: inherit;
+  width: 450px;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 200px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.crno{
+  margin-top: 20px;
+display: flex;
+justify-content: end;
+height: 30px;
+
+}
+.crno button{
+  background-color: rgb(23, 209, 94);
+  outline: none;
+  border-radius: 10px;
+}
+
+.none{
+  color: rgb(8, 243, 192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 200px;
+}
+
+.p{
+ color:tomato;
+  font-size: 50px;
+  text-align: center;
+}
+
+.bigs{
+  margin: 50px;
+  border: 1px solid rgba(180, 179, 179, 0.123);
+  height: 500px;
+  border-radius: 20px;
+}
+.show{
+  margin: 20px;
+}
+.show button{
+  color: white;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.445);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.show button:hover{
+  background-color: rgb(10, 226, 154);
+  color: black;
+}
+.show a{
+  text-decoration: none;
+}
+.del button{
+  color:tomato;
+  margin-left:800px ;
+  margin-top: -25px;
+}
+.del button:hover{
+ color: tomato;
+  background-color: rgb(22, 90, 87);
+}
+
+.titles{
+  color: wheat;
+  margin-top: 15px;
+}
+.titles input{
+  margin: 10px;
+  background-color: rgba(128, 128, 128, 0.034);
+  color: white;
+  width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  border-radius: 15px;
+  text-align: center;
+  height: 25px;
+}
+.texts{
+  color: white;
+ 
+}
+.texts textarea{
+  background-color: inherit;
+  color: white;
+  width: 600px;
+  height: 300px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.texts button{
+margin-left: 800px;
+height: 40px;
+margin-top: -40px;
+background-color: rgb(12, 207, 116);
+color: black;
+}
+
+.backh{
+  margin-left: -55px;
+
+ 
+}
+.autho a{
+  text-decoration: none;
+  color: rgb(252, 250, 250);
+}
+.autho span{
+  
+  color: rgb(74, 226, 107);
+}
+.autho span:hover{
+  
+  color: rgb(136, 136, 136);
+}
+.backh button{
+  background-color: inherit;
+  color: white;
+  border: 1px solid rgba(168, 166, 166, 0.479);
+  border-radius: 15px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.x a{
+  text-decoration: none;
+  color: rgb(46, 226, 127);
+  
+}
+
+.x a:hover{
+  color: rgb(145, 146, 142);
+}
+.x{
+  display: flex;
+  justify-content: end;
+  font-size: 25px;
+
+ 
+}
