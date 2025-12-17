@@ -29,9 +29,15 @@ function Autho() {
 
         const data = await res.json()
         localStorage.setItem("token", data.token)
+         localStorage.setItem("role", data.role);
          toast.success("Login successful")
+    if (data.role === "admin") {
+      console.log('API response:', data);
+
+      navigate("/admin");
+    }else{
         navigate("/notes") 
-        
+    }  
       } catch (error) {
         console.error(error)
         toast.error("Error loging in")

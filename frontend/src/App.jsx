@@ -6,6 +6,7 @@ import Detail from './pages/Detail'
 import Home from './pages/Home'
 import Autho from './pages/Autho'
 import Register from './pages/Register'
+import Admins from './pages/Admins'
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
           <Route path='/create' element={<Create/>}/>
           <Route path='/signup' element={<Autho/>}/>
           <Route path='/register' element={<Register/>}/>
+          <Route path='/admin' element={<Admins/>}/>
          
       </Routes>
     </div>

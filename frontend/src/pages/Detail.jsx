@@ -47,10 +47,12 @@ function Detail() {
     try {
       const res = await fetch(`http://localhost:5000/api/notes/${id}`, {
         method: "PUT",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json" ,
+           "Authorization": `Bearer ${localStorage.getItem("token")}`,
+        },
         body: JSON.stringify({ title: note.title, content: note.content }),
-        "Authorization": `Bearer ${localStorage.getItem("token")}`
-      });
+       
+    });
 
       if (res.ok) {
         const data=await res.json()
@@ -63,11 +65,13 @@ function Detail() {
       } else {
         toast.error("Failed to Update note");
       }
+  
     } catch (error) {
       console.log(error);
       toast.error("Error while updating your note");
     }
   }
+
     
 
 
